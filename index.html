@@ -1,14 +1,20 @@
-<html>
+<html ng-app="DIApp">
 <head>
+  <script src="angular.min.js"></script>
+  <script src="app.js"></script>
+  <title>
+    DI Application
+  </title>
 </head>
-<body>
-  <h1>
-    First html on Atom editor
-  </h1>
-  <h3>
-    checking browser sync ?
-  </h3>
+<body ng-controller="DIAppController">
+  <div>
+    <div>
+      <input type="text" ng-model="name">
+      {{name}}
+    </div>
 
+
+  </div>
 </body>
 
 </html>
