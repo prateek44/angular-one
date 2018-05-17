@@ -1,17 +1,24 @@
-<html ng-app="">
+<html ng-app="FoodCounterApp">
 <head>
+
+  <script src="angular.min.js"></script>
+  <script src="app.js"></script>
   <title>
     Food Items Counter
   </title>
 </head>
-<body ng-controller="">
+<body ng-controller="FoodCounterAppController">
   <div>
     <div>
-      Enter Food Items:<input type="text" ng-model="">
+      Enter Food Items:<input type="text" ng-model="items">{{items}}
       <br>
     </div>
     <div>
-      <button type="text" ng-model="">Check If Too Much</button>
+      <button type="text" ng-click="checkNumberOfItems();">Check If Too Much</button>
+    </div>
+    <div>
+      <input type="text" ng-model="message">
+
     </div>
 
   </div>
